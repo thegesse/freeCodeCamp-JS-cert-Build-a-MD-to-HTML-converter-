@@ -45,6 +45,7 @@ function convertMarkdown() {
     // should have a + '\n' but tests hate that for some reason
     htmlResult += convertedLine;
   }
+  //no sanitazion the tests dont like it
   if (output) output.textContent = htmlResult;
   if(preview) preview.innerHTML = htmlResult;
   return htmlResult;
